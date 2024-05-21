@@ -19,7 +19,7 @@ const showColors = () => {
       (color) => `
                 <li class="color">
                     <span class="rect" style="background: ${color}; border: 1px solid ${
-        color == "#ffffff" ? "#ccc" : color
+        color === "#ffffff" ? "#ccc" : color
       }"></span>
                     <span class="value" data-color="${color}">${color}</span>
                 </li>
@@ -50,7 +50,7 @@ const activateEyeDropper = async () => {
 
     console.log(pickedColors);
   } catch (error) {
-    console.error(error);
+    console.error("failed to copy color code");
   }
 };
 
@@ -58,7 +58,7 @@ const clearAllColors = () => {
   pickedColors.length = 0;
   localStorage.setItem("picked-colors", JSON.stringify(pickedColors));
   document.querySelector(".picked-colors").classList.add("hide");
-  colorList.innerHTML = ""; 
+  colorList.innerHTML = "";
   console.log("All colors cleared");
 };
 
