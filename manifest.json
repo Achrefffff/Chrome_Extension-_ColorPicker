@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Ash COLOR PICKER",
+    "description": "This extension will help you to pick any color from any website.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/circle-1613999_640.png"
+        
+    }
+}
